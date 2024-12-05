@@ -1,0 +1,1 @@
+SELECT * FROM node_docker.user;

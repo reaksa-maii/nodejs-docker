@@ -6,3 +6,12 @@ services:
     environment:
         - NGINX_HOST=foobar.com
         - NGINX_PORT=81
+        
+  server:
+    image: nginx
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - 81:80
+    networks:
+      - app-network
